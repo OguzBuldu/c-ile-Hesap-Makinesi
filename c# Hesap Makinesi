@@ -1,0 +1,137 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace hesap_makinesi
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hesap Makinesi");
+
+            string islem;
+            
+            
+            
+
+
+            // Girilecek Sayı Girilsin
+            // İşlem Seçilsin
+            //
+
+            while (true)
+            {
+                Console.WriteLine("Bir Sayı Seçiniz: ");
+                int sayı = Convert.ToInt32(Console.ReadLine());
+
+                Console.WriteLine("İkinci Bir Sayı Giriniz: ");
+                int sayı2 = Convert.ToInt32(Console.ReadLine());
+
+                 
+
+                Console.WriteLine("Bir İşlem Seçiniz (+, -, *, /) ");
+                 islem = Console.ReadLine();
+
+                    if (islem == "+")
+                {
+                    Console.WriteLine("Sonuç: "+(sayı + sayı2));
+
+                    Console.WriteLine("Başka Bir İşlem Yapmak İster misiniz? (evet, hayır)");
+                    
+                      string baska  = Console.ReadLine();
+
+                    if (baska == "evet")
+                    {
+                        continue;
+                    }
+
+                    else if (baska =="hayır")
+                    {
+                        break;
+                    }
+
+                }
+                    else if (islem == "-")
+                {
+                    Console.WriteLine("Sonuç: " + (sayı - sayı2));
+
+                    Console.WriteLine("Başka Bir İşlem Yapmak İster misiniz? (evet, hayır)");
+                     string baska = Console.ReadLine();
+
+                    if (baska == "evet") {
+                        continue;
+
+
+                    }
+                    else if (baska == "hayır")
+                    {
+                        break;
+                    }
+
+                     
+                }
+                    else if (islem == "*")
+                {
+                    Console.WriteLine("Sonuç: " + (sayı * sayı2));
+
+                    Console.WriteLine("Başka Bir İşlem Yapmak İster misiniz? (evet, hayır)");
+                    string baska = Console.ReadLine();
+
+                    if (baska == "evet")
+                    {
+                        continue;
+
+
+                    }
+                    else if (baska == "hayır")
+                    {
+                        break;
+                    }
+
+                }
+                    else if(islem == "/")
+                {
+                    Console.WriteLine("Sonuç: " + (sayı / sayı2));
+
+                    Console.WriteLine("Başka Bir İşlem Yapmak İster misiniz? (evet, hayır)");
+                    string baska = Console.ReadLine();
+
+                    if (baska == "evet")
+                    {
+                        continue;
+
+
+                    }
+                    else if (baska == "hayır")
+                    {
+                        break;
+                    }
+                }
+                
+                    else
+                {
+                    Console.WriteLine("Lütfen Geçerli Bir İşlem Seçiniz...");
+                    continue;
+                }
+               
+
+
+
+
+
+
+
+
+
+            }
+            Console.ReadLine();
+
+            
+
+
+        }
+    }
+}
